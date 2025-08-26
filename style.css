@@ -42,4 +42,17 @@ nav a {
 
 nav a:hover{
     text-decoration: underline;
+    transform: scale(0.90);
+    transform: transform 0.1s;
+}
+
+.graficos-container__texto{
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--secundary-color) solid 2px;
+}
+
+#graficos-container {
+    margin: 5rem;
 }
