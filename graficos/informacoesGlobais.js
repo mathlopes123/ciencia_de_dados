@@ -10,7 +10,6 @@ async function vizualizarInformacoesGlobais() {
     const trabalhadoresMundo = (dados.total_trabalhadores_mundo/1e9)
     const tempoDeTrabalho = parseInt (dados.tempo_de_deslocamento_para_trabalho)
     const minutos = Math.round((dados.tempo_medio_para_deslocamento - tempoDeTrabalho) * 60)
-}
 
 const paragrafo = document.createElement('p')
 
