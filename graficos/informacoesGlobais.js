@@ -8,7 +8,7 @@ async function vizualizarInformacoesGlobais() {
 
     const pessoasMundo = (dados.total_pessoas_mundo/1e9)
     const trabalhadoresMundo = (dados.total_trabalhadores_mundo/1e9)
-    const tempoDeTrabalho = parseInt (dados.tempo_de_deslocamento_para_trabalho)
+    const tempoDesTrabalho = parseInt (dados.tempo_de_deslocamento_para_trabalho)
     const minutos = Math.round((dados.tempo_medio_para_deslocamento - tempoDeTrabalho) * 60)
 
 const paragrafo = document.createElement('p')
@@ -18,7 +18,7 @@ paragrafo.classList.add('graficos-container__texto')
 paragrafo.innerHTML = `O mundo tem <span>${pessoasMundo}</span>  bilhões de pessoas, dessas pessoas, aproximadamente <span>${trabalhadoresMundo}</span>   bilhões estão empregadas e passam em média  <span>${tempoDesTrabalho}horas</span> e <span>${minutos} minutos</span> por dia no caminho para o trabalho. Temos, portanto, mais da metade da população mundial que não exerce trabalhos com vínculos empregatícios legais. O que pode significar que há longevidade e desse modo, muitas pessoas aposentadas. Porém, também pode significar muitos postos de trabalho chamados informais.`
 
 const container = document.getElementById('graficos-container')
-container.appendChild(paragrafo);
+    container.appendChild(paragrafo);
 
 }
 
