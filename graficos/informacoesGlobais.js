@@ -3,13 +3,13 @@ const url:'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGr
 async function vizualizarInformacoesGlobais() {
 
     const resposta = await fetch(url)
-  
+   
     const dados = await resposta.json()
 
     const pessoasMundo = (dados.total_pessoas_mundo/1e9)
     const trabalhadoresMundo = (dados.total_trabalhadores_mundo/1e9)
-    const tempoDesTrabalho = parseInt (dados.tempo_de_deslocamento_para_trabalho)
-    const minutos = Math.round((dados.tempo_medio_para_deslocamento - tempoDeTrabalho) * 60)
+    const tempoDesTrabalho = parseInt (dados.tempo_medio_deslocamento_para_trabalho)
+    const minutos = Math.round((dados.tempo_medio_deslocamento_para_trabalho - tempoDesTrabalho) * 60)
 
 const paragrafo = document.createElement('p')
 
